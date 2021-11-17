@@ -1,0 +1,21 @@
+{
+  "name": "penalogue-landing",
+  "version": "1.0.0",
+  "main": "index.html",
+  "repository": "git@github.com:Penalogue/penalogue-landing.git",
+  "author": "Adegoke Temitope <adegoketemitope1909@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "style:postcss": "NODE_ENV=production postcss assets/css/tailwind.css -o assets/css/main.css",
+    "style:postcss:watch": "NODE_ENV=production postcss assets/css/tailwind.css -o assets/css/main.css -w"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.0",
+    "cssnano": "^5.0.11",
+    "postcss": "^8.3.11",
+    "postcss-cli": "^9.0.2",
+    "postcss-import": "^14.0.2",
+    "tailwindcss": "^2.2.19"
+  }
+}

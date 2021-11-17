@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import "common.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body {
+    font-family: Inter, sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: PlusJakartaDisplay, sans-serif;
+  }
+
+  @font-face {
+    font-family: PlusJakartaDisplay;
+    font-weight: 300;
+    src: url(../fonts/plus-jakarta-sans/PlusJakartaDisplay-Light.otf);
+  }
+  @font-face {
+    font-family: PlusJakartaDisplay;
+    font-weight: 400;
+    src: url(../fonts/plus-jakarta-sans/PlusJakartaDisplay-Regular.otf);
+  }
+  @font-face {
+    font-family: PlusJakartaDisplay;
+    font-weight: 500;
+    src: url(../fonts/plus-jakarta-sans/PlusJakartaDisplay-Medium.otf);
+  }
+  @font-face {
+    font-family: PlusJakartaDisplay;
+    font-weight: 700;
+    src: url(../fonts/plus-jakarta-sans/PlusJakartaDisplay-Bold.otf);
+  }
+}
