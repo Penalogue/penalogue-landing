@@ -1,0 +1,22 @@
+#navbar{
+  background-color: purple;
+}
+
+.section {
+  @apply container mx-auto w-9/12;
+}
+
+.section-fluid{
+  @apply container w-full;
+}
+
+.center-content{
+  @apply flex items-start justify-start;
+}
+
+.screen-one-bg{
+  background: url('../images/styled-background.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

@@ -8,7 +8,7 @@
   "private": true,
   "scripts": {
     "style:postcss": "NODE_ENV=production postcss assets/css/tailwind.css -o assets/css/main.css",
-    "style:postcss:watch": "NODE_ENV=production postcss assets/css/tailwind.css -o assets/css/main.css -w"
+    "style:postcss:watch": "postcss assets/css/tailwind.css -o assets/css/main.css -w"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.0",
