@@ -1,3 +1,23 @@
+body::-webkit-scrollbar {
+  width: 8px;
+  border-radius: 15px;
+}
+
+body::-webkit-scrollbar-thumb {
+  width: 7px;
+  @apply bg-primary;
+}
+
+body::-webkit-scrollbar-track {
+  widows: 5px;
+  @apply bg-gray-100;
+}
+
+a, button{
+  @apply cursor-pointer;
+}
+
+
 #navbar{
   background-color: purple;
 }
