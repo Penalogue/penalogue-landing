@@ -21,6 +21,9 @@ module.exports = {
       },
       boxShadow: {
         "penalouge-style": "5.77565px 8.66348px 23.1026px rgba(91, 77, 255, 0.4)"
+      },
+      dropShadow: {
+        "penalogue-style": "5.77565px 8.66348px 23.1026px rgba(91, 77, 255, 0.4)"
       }
     },
   },

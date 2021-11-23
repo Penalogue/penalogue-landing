@@ -27,7 +27,7 @@ a, button{
 }
 
 .section-fluid{
-  @apply container w-full;
+  @apply w-full;
 }
 
 .center-content{
