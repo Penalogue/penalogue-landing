@@ -27,19 +27,117 @@
     />
     <meta name="twitter:image" content="" />
   </head>
-  <body class="bg-[#F9F9F9]">
+  <body class="bg-bg-light-main dark:bg-bg-dark-main relative">
+    <!-- Nav mobile -->
+    <nav
+      id="navbar-mobile"
+      class="
+        absolute
+        top-0
+        left-0
+        right-0
+        bottom-0
+        w-full
+        h-full
+        bg-black bg-opacity-40
+        z-10
+      "
+    >
+      <div class="mobile-content bg-white w-full rounded-bl-3xl rounded-br-3xl">
+        <div class="flex flex-col items-start justify-between w-full">
+          <div class="flex items-center justify-between w-full pt-4 pb-2 px-7">
+            <div class="flex items-center">
+              <img class="mr-2" src="./assets/images/brand/colored.svg" />
+              <h2 class="font-bold text-base dark:text-white">Penalogue</h2>
+            </div>
+
+            <div id="close-mobile-nav">
+              <svg
+                width="25"
+                height="26"
+                viewBox="0 0 25 26"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M3.71387 21.7572L21.2344 4.23669"
+                  stroke="black"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M21.2354 21.7572L3.71484 4.23669"
+                  stroke="black"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </div>
+          </div>
+
+          <hr class="border-b w-full px-7 border-gray-200 mt-3" />
+
+          <h4 class="text-left pt-4 pb-2 px-9 font-medium text-[18px]">Contact</h4>
+          <hr class="border-b w-full px-7 border-gray-200 mt-3" />
+          <h4 class="text-left pt-4 pb-2 px-9 font-medium text-[18px]">App Intro</h4>
+          <hr style="visibility: hidden" class="bg-transparent text-transparent  w-full mt-3 " />
+        </div>
+      </div>
+    </nav>
 
     <!-- Navbar -->
-    <nav id="navbar">
+    <nav id="navbar" class="bg-bg-light-nav dark:bg-bg-dark-nav">
       <div class="container mx-auto w-10/12 py-5">
         <div class="flex items-center justify-between">
           <div class="flex items-center">
             <img class="mr-2" src="./assets/images/brand/colored.svg" />
-            <h2 class="font-bold text-base">Penalogue</h2>
+            <h2 class="font-bold text-base dark:text-white">Penalogue</h2>
           </div>
-          <div class="flex items-center space-x-3">
-            <img src="./assets/images/sun.svg" alt="sun" />
-            <img src="./assets/images/navbar.svg" alt="nav" />
+          <div class="flex items-center space-x-3 dark:text-white">
+            <div
+              class="
+                hidden
+                md:flex
+                items-start
+                space-x-5
+                font-medium font-[18px]
+                mr-8
+              "
+            >
+              <h6>App Intro</h6>
+              <h6>Contact</h6>
+            </div>
+            <img
+              id="theme-toggle"
+              class="cursor-pointer"
+              src="./assets/images/sun.svg"
+              alt="sun"
+            />
+            <div id="mobile-nav-button" class="cursor-pointer md:hidden block">
+              <svg
+                class="stroke-current text-black dark:text-white"
+                width="29"
+                height="20"
+                viewBox="0 0 29 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M2.03906 18.0918H26.8168"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M2.03906 10.0918H26.8168"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M2.03906 2.0918H26.8168"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </div>
           </div>
         </div>
       </div>
@@ -61,15 +159,23 @@
           "
         >
           <div class="md:w-5/12">
-            <h1 class="font-bold text-[28px] md:text-[52px] md:leading-[72px] mb-3">
+            <h1
+              class="
+                font-bold
+                text-[28px]
+                md:text-[52px] md:leading-[65px]
+                mb-3
+                dark:text-white
+              "
+            >
               Express yourself in Poem & Share with a Global Audience
             </h1>
-            <p class="text-sm md:text-[18px] font-medium mb-10">
+            <p class="text-sm md:text-[18px] font-medium mb-10 dark:text-white">
               Sit a rhoncus amet varius sed mollis imperdiet a, quis. Ipsum vel
               habitasse urna, tristique. Commodo tortor lorem dignissim
               facilisis neque et at.
             </p>
-            <div class="flex items-center justify-between md:w-6/12">
+            <div class="flex items-center justify-between space-x-5 md:w-6/12">
               <a>
                 <img
                   src="./assets/images/GooglePlayButtonBlue.png"
@@ -91,7 +197,9 @@
       </div>
     </section>
 
-    <section class="section-fluid block md:hidden screen-one-bg px-6 pb-8 text-center">
+    <section
+      class="section-fluid block md:hidden screen-one-bg px-6 pb-8 text-center"
+    >
       <div class="flex items-center justify-between container">
         <img class="mx-auto" src="./assets/images/screen-1.png" />
       </div>
@@ -101,7 +209,18 @@
       </h4>
     </section>
 
-    <section class="section-fluid md:block hidden screen-one-bg px-6 pb-8 text-center py-20">
+    <section
+      class="
+        section-fluid
+        md:block
+        hidden
+        screen-one-bg
+        px-6
+        pb-8
+        text-center
+        py-20
+      "
+    >
       <div
         class="
           group
@@ -144,7 +263,9 @@
     </section>
 
     <section class="md:py-28 py-16">
-      <div class="md:flex md:items-center md:justify-between md:w-9/12 md:mx-auto">
+      <div
+        class="md:flex md:items-center md:justify-between md:w-9/12 md:mx-auto"
+      >
         <div class="center-content mb-14 md:mb-0 md:w-6/12">
           <div class="flex items-center justify-center w-full">
             <img
@@ -154,65 +275,161 @@
           </div>
         </div>
         <div class="text-center md:text-left md:w-6/12 w-9/12 mx-auto">
-          <h3 class="text-primary font-bold text-2xl md:text-[36px] mb-5">Write Poem</h3>
-          <h5 class="text-black font-medium leading-[39px] text-[18px] md:text-[28px]">
+          <h3 class="text-primary font-bold text-2xl md:text-[36px] mb-5">
+            Write Poem
+          </h3>
+          <h5
+            class="
+              text-black
+              font-medium
+              leading-[23px]
+              md:leading-[39px]
+              text-[18px]
+              md:text-[28px]
+              dark:text-white
+            "
+          >
             Join in on any title and see how others write poem
           </h5>
-          <p class="text-sm md:text-[22px] leading-[29px] mt-6">
-          Pellentesque at pellentesque vitae nullam nisl pharetra est duis. Vulputate amet morbi posuere urna, malesuada mauris.
-          Mattis in platea amet a tincidunt. Ridiculus quis ipsum pretium tortor, lacus habitant. Egestas aliquam tempor nam nisi
-          lorem interdum. Posuere amet et mi enim. Viverra amet, imperdiet sit elementum eget ullamcorper cras sed sit
+          <p
+            class="
+              text-sm
+              md:text-[22px]
+              leading-[17px]
+              md:leading-[29px]
+              mt-6
+              dark:text-white
+            "
+          >
+            Pellentesque at pellentesque vitae nullam nisl pharetra est duis.
+            Vulputate amet morbi posuere urna, malesuada mauris. Mattis in
+            platea amet a tincidunt. Ridiculus quis ipsum pretium tortor, lacus
+            habitant. Egestas aliquam tempor nam nisi lorem interdum. Posuere
+            amet et mi enim. Viverra amet, imperdiet sit elementum eget
+            ullamcorper cras sed sit
           </p>
         </div>
       </div>
     </section>
 
-    <section class="md:py-28 py-16 bg-white">
-      <div class="md:flex md:items-center md:justify-between md:w-9/12 md:mx-auto">
+    <section class="md:py-28 py-16 bg-white dark:bg-[#15151B]">
+      <div
+        class="
+          flex
+          md:items-center md:justify-between
+          flex-col-reverse
+          md:flex-row md:w-9/12 md:mx-auto
+        "
+      >
         <div class="text-center md:text-left md:w-6/12 w-9/12 mx-auto">
-          <h3 class="text-primary font-bold text-2xl md:text-[36px] mb-5">Record Peom</h3>
-          <h5 class="text-black font-medium leading-[39px] text-[18px] md:text-[28px]">
+          <h3 class="text-primary font-bold text-2xl md:text-[36px] mb-5">
+            Record Peom
+          </h3>
+          <h5
+            class="
+              text-black
+              font-medium
+              leading-[23px]
+              md:leading-[39px]
+              text-[18px]
+              md:text-[28px]
+              dark:text-white
+            "
+          >
             Join in on any title and see how others write poem
           </h5>
-          <p class="text-sm md:text-[22px] leading-[29px] mt-6">
-            Pellentesque at pellentesque vitae nullam nisl pharetra est duis. Vulputate amet morbi posuere urna, malesuada
-            mauris.
-            Mattis in platea amet a tincidunt. Ridiculus quis ipsum pretium tortor, lacus habitant. Egestas aliquam tempor
-            nam nisi
-            lorem interdum. Posuere amet et mi enim. Viverra amet, imperdiet sit elementum eget ullamcorper cras sed sit
+          <p
+            class="
+              text-sm
+              md:text-[22px]
+              leading-[17px]
+              md:leading-[29px]
+              mt-6
+              dark:text-white
+            "
+          >
+            Pellentesque at pellentesque vitae nullam nisl pharetra est duis.
+            Vulputate amet morbi posuere urna, malesuada mauris. Mattis in
+            platea amet a tincidunt. Ridiculus quis ipsum pretium tortor, lacus
+            habitant. Egestas aliquam tempor nam nisi lorem interdum. Posuere
+            amet et mi enim. Viverra amet, imperdiet sit elementum eget
+            ullamcorper cras sed sit
           </p>
         </div>
         <div class="center-content mb-14 md:mb-0 md:w-6/12">
           <div class="flex items-center justify-center w-full">
-            <img   class="drop-shadow-penalogue-style w-[48%]" src="./assets/images/record-poem.png" />
+            <img
+              class="drop-shadow-penalogue-style w-[48%]"
+              src="./assets/images/record-poem.png"
+            />
           </div>
         </div>
       </div>
     </section>
 
-    <section class="py-28 md:py-12 ">
-      <div class="md:flex md:items-center md:justify-between md:w-10/12 md:mx-auto">
+    <section class="md:py-28 py-16">
+      <div
+        class="md:flex md:items-center md:justify-between md:w-10/12 md:mx-auto"
+      >
         <div class="center-content mb-14 md:mb-0 md:w-6/12 w-9/12 mx-auto">
           <div class="flex items-center justify-center w-full">
-            <img class="drop-shadow-penalogue-style w-[48%]" src="./assets/images/open-titles.png" />
+            <img
+              class="drop-shadow-penalogue-style w-[45%]"
+              src="./assets/images/open-titles.png"
+            />
           </div>
         </div>
-        <div class="text-center md:text-left md:w-6/12">
-          <h3 class="text-primary font-bold text-2xl md:text-[36px] mb-5">Open Titles</h3>
-          <h5 class="text-black font-medium leading-[39px] text-[18px] md:text-[28px]">
+        <div class="text-center md:text-left md:w-6/12 w-9/12 mx-auto">
+          <h3 class="text-primary font-bold text-2xl md:text-[36px] mb-5">
+            Open Titles
+          </h3>
+          <h5
+            class="
+              text-black
+              font-medium
+              leading-[23px]
+              md:leading-[39px]
+              text-[18px]
+              md:text-[28px]
+              dark:text-white
+            "
+          >
             Join in on any title and see how others write poem
           </h5>
-          <p class="text-sm md:text-[22px] leading-[29px] mt-6">
-          Pellentesque at pellentesque vitae nullam nisl pharetra est duis. Vulputate amet morbi posuere urna, malesuada mauris.
-          Mattis in platea amet a tincidunt. Ridiculus quis ipsum pretium tortor, lacus habitant. Egestas aliquam tempor nam nisi
-          lorem interdum. Posuere amet et mi enim. Viverra amet, imperdiet sit elementum eget ullamcorper cras sed sit
+          <p
+            class="
+              text-sm
+              md:text-[22px]
+              leading-[17px]
+              md:leading-[29px]
+              mt-6
+              dark:text-white
+            "
+          >
+            Pellentesque at pellentesque vitae nullam nisl pharetra est duis.
+            Vulputate amet morbi posuere urna, malesuada mauris. Mattis in
+            platea amet a tincidunt. Ridiculus quis ipsum pretium tortor, lacus
+            habitant. Egestas aliquam tempor nam nisi lorem interdum. Posuere
+            amet et mi enim. Viverra amet, imperdiet sit elementum eget
+            ullamcorper cras sed sit
           </p>
         </div>
       </div>
-      </section>
+    </section>
 
-
-    <section class="container relative py-12 px-5 md:w-9/12 mx-auto rounded-md overflow-hidden mb-12">
+    <section
+      class="
+        container
+        relative
+        py-12
+        px-5
+        md:w-9/12
+        mx-auto
+        rounded-md
+        overflow-hidden
+        mb-12
+      "
+    >
       <div class="bg-primary text-white rounded-[30px] px-5 pt-8">
         <h2 class="text-[28px] font-bold mb-3">Download our App</h2>
         <p class="text-lg">
@@ -223,7 +440,7 @@
           <img class="-ml-6" src="./assets/images/faces/face-2.png" />
           <img class="-ml-6" src="./assets/images/faces/face-3.png" />
         </div>
-        <div class="flex items-center pb-8">
+        <div class="flex items-center space-x-5 pb-8">
           <a>
             <img
               src="./assets/images/GooglePlayButton.png"
@@ -311,10 +528,10 @@
               </div>
             </div>
           </div>
-
-          <div></div>
         </div>
       </div>
     </footer>
+
+    <script src="./assets/js/main.js"></script>
   </body>
 </html>

@@ -13,30 +13,60 @@ body::-webkit-scrollbar-track {
   @apply bg-gray-100;
 }
 
-a, button{
+body,
+#navbar {
+  transition: 0.7s ease-in-out;
+}
+
+body.modal-open {
+  overflow: hidden;
+}
+
+a,
+button {
   @apply cursor-pointer;
 }
 
-
-#navbar{
-  
+#navbar {
 }
 
 .section {
   @apply container mx-auto w-9/12;
 }
 
-.section-fluid{
+.section-fluid {
   @apply w-full;
 }
 
-.center-content{
+.center-content {
   @apply flex items-start justify-start;
 }
 
-.screen-one-bg{
-  background: url('../images/styled-background.png');
+.screen-one-bg {
+  background: url("../images/styled-background.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+#navbar-mobile {
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.7s ease-in-out;
+}
+
+#navbar-mobile.open {
+  max-height: 100%;
+  overflow: auto;
+}
+
+.mobile-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.7s ease-in-out;
+}
+
+.mobile-content.open {
+  max-height: 100%;
+  overflow: auto;
 }
